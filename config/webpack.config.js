@@ -20,9 +20,9 @@ const getPlugins = () => {
     new ModuleFederationPlugin({
       name: "webpack_module_federation",
       filename: "remoteEntry.js",
-      // remotes: {
-      //   styled_components: "styled_components@http://localhost:3002/remoteEntry.js"
-      // },
+      remotes: {
+        styled_components: "styled_components@http://localhost:3002/remoteEntry.js"
+      },
       exposes: {
         "./store": path.resolve(__dirname, '../src/store/storeShared')
       },
@@ -90,12 +90,9 @@ module.exports = {
       '@@interfaces': path.resolve(__dirname, '../src/interfaces')
     }
   },
-
   devServer: {
     port: 4200
-    // historyApiFallback: true,
   },
-
   module: {
     rules: [
       {
