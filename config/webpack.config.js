@@ -24,7 +24,7 @@ const getPlugins = () => {
         styled_components: "styled_components@http://localhost:3002/remoteEntry.js"
       },
       exposes: {
-        "./store": path.resolve(__dirname, '../src/store/storeShared')
+        "./store": path.resolve(__dirname, '../src/store/withStore')
       },
       shared: {
         ...deps,
