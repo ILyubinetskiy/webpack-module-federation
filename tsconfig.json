@@ -1,18 +1,21 @@
 {
   "compilerOptions": {
-    "baseUrl": "src1",
+    "baseUrl": "./",
     "paths": {
       "@@constants/*": [
-        "constants/*"
+        "src/constants/*"
       ],
       "@@components/*": [
-        "components/*"
+        "src/components/*"
       ],
       "@@store/*": [
-        "store/*"
+        "src/store/*"
       ],
       "@@interfaces/*": [
-        "interfaces/*"
+        "src/interfaces/*"
+      ],
+      "styled_components/App": [
+        "src/@types/styled_components"
       ]
     },
     /* Basic Options */

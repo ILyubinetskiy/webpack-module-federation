@@ -1,9 +1,8 @@
 import React, { Suspense, useEffect } from "react";
 import ReactDOM from "react-dom";
-import { useAppDispatch } from "./store";
-import { StoreProvider } from "./store/withStore";
-import { fetchUsers } from "./store/users/usersSlice";
-// @ts-ignore
+import { useAppDispatch } from "@@store/index";
+import { StoreProvider } from "@@store/withStore";
+import { fetchUsers } from "@@store/users/usersSlice";
 const RemoteApp = React.lazy(() => import("styled_components/App"));
 
 
